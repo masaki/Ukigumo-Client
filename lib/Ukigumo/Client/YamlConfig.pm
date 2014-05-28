@@ -36,6 +36,18 @@ has notifiers => (
 
 
 # Configurable by yml
+has os => (
+    is      => 'ro',
+    isa     => 'Str',
+    default => sub { shift->config->{os} },
+);
+
+has arch => (
+    is      => 'ro',
+    isa     => 'Str',
+    default => sub { shift->config->{arch} },
+);
+
 has env => (
     is      => 'ro',
     lazy    => 1,
@@ -175,4 +187,3 @@ sub _load_notifier_class {
 }
 
 1;
-
