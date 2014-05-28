@@ -2,7 +2,7 @@ package Ukigumo::Client;
 use strict;
 use warnings;
 use 5.008001;
-our $VERSION = '0.31';
+our $VERSION = '0.31_01';
 
 use Carp ();
 use Capture::Tiny;
